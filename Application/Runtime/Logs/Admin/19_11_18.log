@@ -1,0 +1,28 @@
+[ 2019-11-18T11:46:27+08:00 ] ::1 /bysystem/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.043990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010859s ]
+
+[ 2019-11-18T11:46:27+08:00 ] ::1 /bysystem/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.023170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.023265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.138047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.138146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009326s ]
+

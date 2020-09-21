@@ -1,0 +1,280 @@
+<include file="public/header" />
+
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder">文档管理</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+   
+   
+     <if condition="$url neq '' ">
+    <div class="padding border-bottom">
+      <ul class="search" style="padding-left:10px;">
+        <li> <a class="button border-main icon-plus-square-o" href="{:U('Oa/addOasystem')}"> 新增文档</a> </li>
+        <li>搜索：</li>  
+        <form action="{:U('Oa/OasystemSearch')}" method="GET">
+       <input type="hidden" value="{$url}" name="curl"/>
+        <input type="hidden" value="{$cid}" name="cid"/>
+	        <li>
+	          <input type="text" placeholder="分类名称" name="keywords" value="{$key}" class="input" style="width:250px; line-height:17px;display:inline-block" />
+	          <button  class="button border-main icon-search"  > 搜索</button>
+	        </li>
+     	</form> 
+      </ul>
+  
+    </div>
+   <else/>
+   <div class="padding border-bottom">
+      <ul class="search" style="padding-left:10px;">
+        <li> <a class="button border-main icon-plus-square-o" href="{:U('Oa/addOasystem')}"> 新增文档</a> </li>
+        <li>搜索：</li>  
+        <form action="{:U('Oa/OasystemSearch')}" method="GET">
+        <input type="hidden" value="{$url}" name="curl"/>
+         <input type="hidden" value="{$cid}" name="cid"/>
+	        <li>
+	          <input type="text" placeholder="文档名称" name="keywords" value="{$key}" class="input" style="width:250px; line-height:17px;display:inline-block" />	         
+	        </li>
+	        
+	         <button  class="button border-main icon-search"  > 搜索</button>
+     	</form> 
+      </ul>
+  
+    </div>
+   </if>
+  
+   <if condition="$url neq '' ">   
+    <div style="width:100%">
+    	<ul style="list-style: none;  "> 	
+    	<if condition="is_array($list)"></if>
+    	 <volist name="list" id="vo">
+    		<li style="display: inline;line-height: 40px;float:left;margin-left: 30px; margin-bottom:20px;">
+    		<div style="background-color:#079bcc; width:185px;height:150px; padding:10px; border-radius:5%;">
+    			<a href="{:U('Oa/oasystemlist',array('cid'=>$vo['oaclasses_id']))}">	
+    			<img style="width:100px; float:none; border:3px solid #fff;  display:block;  height:100px;margin:auto auto;  background-color:red;  border-radius:100%; " src="{$vo.oaclasses_url}">
+    			<span style="font-size:16px; color:#fff; display:block;text-align:center;">{$vo.oaclasses_name|msubstr=0,10,'utf-8',false}</span>
+    			</a>
+    			
+    		</div>
+    		
+    		</li>
+    		
+    		</volist>
+    		<if condition="substr($url,0,1) neq '/' ">{$url} </if>
+    		
+    	</ul>
+    </div>
+    <else />  
+    <form action="{:U('Oa/delOasystems')}" method="POST" id="listform">
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="100" style="text-align:left; padding-left:20px;">ID</th>
+        <th width="20%" >文档名称</th>       
+        <th width="10%" >编辑人</th>   
+        <th width="13%" >所属分类</th>  
+        <th width="12%" >通知状态</th>
+        <th width="12%" >通知时间</th>  
+        <th width="5%" >更多</th>     
+        <th width="280">操作</th>
+      </tr>
+    <volist name="list" id="vo">
+    <input type="hidden" name="classid" value="{$vo['oaclasses_id']}"/>
+        <tr>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="{$vo.id}" />
+           {$vo.id}</td>
+           <td >{$vo.oasystem_name}</td>
+  			<td >{$vo.oaclasses_user}</td>     
+  			<td >{$vo.oaclasses_name}</td>   
+  			<td ><if condition="$vo['oasystem_noticestate'] eq 0"> <span style="color:gray">已通知</span><elseif condition="$vo['oasystem_noticestate'] eq 1" /> <a class="button border-main" href="{:U('Oa/moredetail',array('id'=>$vo['id'],'classid'=>$vo['oaclasses_id']))}"><span ></span> 通知</a> </if></td>   
+  			<td ><if condition="$vo['oasystem_noticetime'] neq 0">{$vo.oasystem_noticetime|date="Y-m-d H:i:s",###}</if></td>   
+  			<td><a href="{:U('Oa/moredetail',array('id'=>$vo['id']))}"><span id="more">查看</span></a></td>
+          <td><div class="button-group"><if condition="$vo['oasystem_noticestate'] eq 1"> <a class="button border-main" href="{:U('Oa/updateOasystem',array('id'=>$vo['id']))}"><span class="icon-edit"></span> 修改</a></if> <a class="button border-red" href="{:U('Oa/delOasystem',array('id'=>$vo['id'],'classid'=>$vo['oaclasses_id']))}" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+      </volist>
+      <tr>
+        <td style="text-align:left; padding:19px 0;padding-left:20px;"><input type="checkbox" id="checkall"/>
+          全选 </td>
+        <td colspan="7" style="text-align:left;padding-left:20px;"> <a href="javascript:void(0)"  class="button border-red icon-trash-o" style="padding:5px 15px;" onclick="DelSelect()"> 批量删除</a>
+     </td>
+      </tr>
+      <tr>
+        <td colspan="8"><div class="pagelist">{$page}  </div></td>
+      </tr>
+    </table>
+    </form>    
+   </if>
+    
+  </div>
+
+<script type="text/javascript">
+
+//搜索
+function changesearch(){	
+		
+}
+
+//单个删除
+function del(){
+	var msg="您确定要删除吗?";
+	if(confirm(msg)==true){
+		return true;
+	}else{return false;}
+}
+
+//全选
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+//批量删除
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) return false;		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
+
+//批量排序
+function sorts(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){	
+		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择要操作的内容!");
+		return false;
+	}
+}
+
+
+//批量首页显示
+function changeishome(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");		
+	
+		return false;
+	}
+}
+
+//批量推荐
+function changeisvouch(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");	
+		
+		return false;
+	}
+}
+
+//批量置顶
+function changeistop(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){		
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");		
+	
+		return false;
+	}
+}
+
+
+//批量移动
+function changecate(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){		
+		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择要操作的内容!");
+		
+		return false;
+	}
+}
+
+//批量复制
+function changecopy(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){	
+		var i = 0;
+	    $("input[name='id[]']").each(function(){
+	  		if (this.checked==true) {
+				i++;
+			}		
+	    });
+		if(i>1){ 
+	    	alert("只能选择一条信息!");
+			$(o).find("option:first").prop("selected","selected");
+		}else{
+		
+			$("#listform").submit();		
+		}	
+	}
+	else{
+		alert("请选择要复制的内容!");
+		$(o).find("option:first").prop("selected","selected");
+		return false;
+	}
+}
+
+</script>
+</body>
+</html>

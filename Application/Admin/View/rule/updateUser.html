@@ -1,0 +1,79 @@
+<include file="public/header" />
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>编辑账户</strong></div>
+  <div class="body-content">
+    <script type="text/javascript">
+  $(function(){
+	    $(":checkbox").click(function(){
+	//设置当前选中checkbox的状态为checked
+	    $(this).attr("checked",true);
+	    $(this).siblings().attr("checked",false); //设置当前选中的checkbox同级(兄弟级)其他checkbox状态为未选中
+	});
+	});
+  </script>
+  
+    <form method="post" class="form-x" action="{:U('Rule/updateUser')}">  
+    
+     
+     <div class="form-group">
+        <div class="label">
+          <label>管理组：</label>
+        </div>
+        <div class="field">
+          	 <foreach name="data" item="v">
+                 {$v['title']}
+                <input class="xb-icheck" type="checkbox" name="group_ids[]" value="{$v['id']}" <in name="v['id']" value="$group_data"> checked="checked" </in> >
+                   &emsp;                    
+               </foreach>
+        </div>
+      </div>
+           
+    		<input type="hidden" name="uid" value="{$user_data['id']}" />                     
+    
+      <div class="form-group">
+        <div class="label">
+          <label>账户名称：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="{$user_data['master_username']}" readOnly name="username" data-validate="required:请输入账户" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>账户昵称：</label>
+        </div>
+        <div class="field">
+         <input type="text" class="input w50" value="{$user_data['master_nickname']}" name="nickname" data-validate="required:请输入昵称" />
+        </div>
+      </div>     
+      <div class="form-group">
+        <div class="label">
+          <label>账户密码：</label>
+        </div>
+        <div class="field">
+         <input type="password" class="input w50" value="" name="password" data-validate="required:请输入密码" />
+        </div>
+      </div> 
+      
+    <!--   <div class="form-group">
+        <div class="label">
+          <label>确认密码：</label>
+        </div>
+        <div class="field">
+         <input type="password" class="input w50" value="" name="title" data-validate="required:确认密码" />
+        </div>
+      </div>     -->   
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body></html>

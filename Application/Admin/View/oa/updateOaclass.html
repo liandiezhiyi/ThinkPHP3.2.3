@@ -1,0 +1,62 @@
+<include file="public/Product_header" />
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>编辑分类</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="{:U('Oa/updateOaclass')}" enctype="multipart/form-data">  
+ 	<volist name="list" id="vo">
+ 	<input type="hidden" name="uid" value="{$vo.id}">
+      <div class="form-group">
+        <div class="label">
+          <label>分类名称：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="{$vo.oaclasses_name}"  name="oaclasses_name" data-validate="required:请输入分类名称" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      
+       <div class="form-group">
+        <div class="label">
+          <label>分类图标：</label>
+        </div>
+        <div class="field">
+         <dd  class="mselector">
+        <input type="file" id="file" name="upfile" accept="image/gif,image/pdf,image/jpeg,image/jpg,image/png"   multiple>
+         <button class="btn btn-lg btn-info btnimg" type="button" style="margin-top:-10px; margin-left:10px;" >上传图片</button>
+          <span id="em"></span>
+          <span style="color:red">如无需修改图标，则不上传</span>
+          </dd>
+        </div>
+      </div>   
+  
+      
+      <div class="form-group">
+        <div class="label">
+          <label>备注：</label>
+        </div>
+        <div class="field">
+         <input type="text" class="input w50" value="{$vo.oaclasses_info}" name="oaclasses_info"  />
+        </div>
+      </div>   
+      
+      </volist>  
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script>
+$("input[type='file']").change(function(e) {
+	
+	var imagename=document.getElementById('file').files[0].name
+	$("#em").html(imagename);
+});
+</script>
+
+</body></html>

@@ -1,0 +1,165 @@
+<include file="public/Product_header" />
+
+<script type="text/javascript" src="__PUBLIC__/EasyUI/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/EasyUI/js/chosen.jquery.js"></script>
+
+<script src="__PUBLIC__/wangEditor/release/wangEditor.min.js" ></script>
+
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>新增商品</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" onsubmit=" return ss()" action="{:U('Car/carsystemadd')}" enctype="multipart/form-data">
+
+
+
+
+      <div class="form-group">
+        <div class="label">
+          <label>车辆牌照：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="" placeholder="例：浙BY90M0"  id="licence" name="carsystem_licence" onblur="set()" data-validate="required:请输入车牌号"  />
+          <span id="span3" style="color:#ee3333; margin-left:30px;  line-height: 2.5rem;"></span>
+
+        </div>
+
+      </div>
+
+      <div class="form-group">
+        <div class="label">
+          <label>汽车所属部门：</label>
+        </div>
+        <div class="field">
+          <select name="carsystem_class_id"  onblur="ss()" id="carclass_id"  class="input w50 "  >
+            <option value="0" selected="selected">请选择</option>
+            <volist name="carsystem_class" id="vo">
+              <option value="{$vo.id}">{$vo.carclass_name}   </option>
+            </volist>
+          </select>
+          <span id="span1" style="color:#ee3333; margin-left:30px;  line-height: 2.5rem;"></span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="label">
+          <label>汽车负责人：</label>
+        </div>
+        <div class="field">
+          <select name="carsystem_master_id"  id="master_id" onblur="ss()"  class="input w50 "  >
+            <option value="0" selected="selected">请选择</option>
+            <volist name="carsystem_master" id="vo">
+              <volist name="vo" id="v">
+                <option value="{$v.id}">{$v.master_username}   </option>
+              </volist>
+
+            </volist>
+          </select>
+          <span id="span2" style="color:#ee3333; margin-left:30px;  line-height: 2.5rem;"></span>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button id="btn1" class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+
+  function ss()
+  {
+
+
+    //下拉列表
+    var slt=document.getElementById("carclass_id");
+    if(slt.value=="0")
+    {
+      //alert("请选择商品分类");
+      $("#span1").html("请选择汽车部门");
+      return false;
+    }$("#span1").html("");
+    //下拉列表
+    var slt1=document.getElementById("master_id");
+    if(slt1.value=="0")
+    {
+      //alert("请选择商品分类");
+      $("#span2").html("请选择汽车负责人");
+      return false;
+    }$("#span2").html("");
+
+    return true;
+  }
+function set() {
+  var la=$("#licence").val();
+  if(la!=null){
+    if (la.length == 7){
+      var express = /^[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣鄂桂甘晋蒙陕吉闽贵粤青藏川宁琼使领A-Z]{1}[A-Z]{1}[A-Z0-9]{4}[A-Z0-9挂学警港澳]{1}$/;
+      result = express.test(la);
+      if(result == false){
+        $("#span3").html('请填写正确车牌号');
+        return false;
+      }else {
+        $("#span3").html('');
+        return true;
+      }
+    }else {
+
+      return false;
+    }
+  }
+
+
+
+
+}
+
+</script>
+
+
+<script type="text/javascript">
+
+  $('.form-control-chosen').chosen({
+    allow_single_deselect: true,
+    width: '100%'
+  });
+  $('.form-control-chosen-required').chosen({
+    allow_single_deselect: false,
+    width: '100%'
+  });
+  $('.form-control-chosen-search-threshold-100').chosen({
+    allow_single_deselect: true,
+    disable_search_threshold: 100,
+    width: '100%'
+  });
+  $('.form-control-chosen-optgroup').chosen({
+    width: '100%'
+  });
+
+  $(function() {
+    $('[title="clickable_optgroup"]').addClass('chosen-container-optgroup-clickable');
+  });
+  $(document).on('click', '[title="clickable_optgroup"] .group-result', function() {
+    var unselected = $(this).nextUntil('.group-result').not('.result-selected');
+    if(unselected.length) {
+      unselected.trigger('mouseup');
+    } else {
+      $(this).nextUntil('.group-result').each(function() {
+        $('a.search-choice-close[data-option-array-index="' + $(this).data('option-array-index') + '"]').trigger('click');
+      });
+    }
+  });
+</script>
+</body></html>

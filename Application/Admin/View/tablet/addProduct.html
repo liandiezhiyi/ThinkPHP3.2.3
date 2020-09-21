@@ -1,0 +1,230 @@
+<include file="public/Product_header" />
+
+<script type="text/javascript" src="__PUBLIC__/EasyUI/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/EasyUI/js/chosen.jquery.js"></script>
+
+<script src="__PUBLIC__/wangEditor/release/wangEditor.min.js" ></script>
+
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>新增商品</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" onsubmit=" return ss()"  action="{:U('Tablet/addProduct')}" enctype="multipart/form-data">  
+ 
+ 
+ 		<div class="form-group">
+	        <div class="label">
+	          <label>选择分类：</label>
+	        </div>
+	        <div class="field">
+	        			 <select name="class_id"  onblur="ss()" id="class_id"  class="input w50 "  >
+							<option value="0" selected="selected">请选择</option>
+	                        	<volist name="classify_id" id="vo">
+	                             	<option value="{$vo.id}">{$vo.classify_name}   </option>
+	                           </volist>
+	                        </select> 
+	                        <span id="span" style="color:#ee3333; margin-left:30px;  line-height: 2.5rem;"></span>
+	        </div>
+       </div>  
+ 
+      <div class="form-group">
+        <div class="label">
+          <label>商品名称：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value=""  name="product_name" data-validate="required:请输商品名称" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      
+       <div class="form-group">
+        <div class="label">
+          <label>商品价格：</label>
+        </div>
+        <div class="field">
+          <input type="text" onkeyup="value=value.replace(/[^\d{1,}\.\d{1,}|\d{1,}]/g,'')" class="input w50" value=""  name="product_price" data-validate="required:请输商品价格" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      
+      
+       <div class="form-group">
+        <div class="label">
+          <label>商品库存：</label>
+        </div>
+        <div class="field">
+          <input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')"  class="input w50" value=""  name="product_num" data-validate="required:请输商品库存" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      
+      
+      
+      <div class="form-group">
+        <div class="label">
+          <label>商品详情：</label>
+        </div>
+        <div class="field">
+        
+        <div style="width:85%" id="editor">   </div> 
+        <textarea rows="20" cols="20" id="editor_content" name="product_info" style="display:none;"></textarea>
+
+         <script>
+        var E = window.wangEditor;
+        var editor = new E('#editor');
+        editor.customConfig.uploadImgServer = "{:U('Tablet/uploadFile')}";  // 上传图片到服务器
+        editor.customConfig.uploadFileName = "file";      //文件名称  也就是你在后台接受的 参数值
+        editor.customConfig.uploadImgHeaders = {    //header头信息 
+            'Accept': 'text/x-json',
+        }
+        // 将图片大小限制为 3M
+        editor.customConfig.uploadImgMaxSize = 3 * 1024 * 1024   //默认为5M
+        editor.customConfig.uploadImgShowBase64 = false;   // 使用 base64 保存图片
+        // editor.customConfig.customAlert = function (info) { //自己设置alert错误信息
+        //     // info 是需要提示的内容
+        //     alert('自定义提示：' + '图片上传失败，请重新上传')
+        // };
+       // editor.customConfig.debug = true; //是否开启Debug 默认为false 建议开启 可以看到错误
+        // editor.customConfig.debug = location.href.indexOf('wangeditor_debug_mode=1') > 0; // 同上 二选一
+        //图片在编辑器中回显
+        editor.customConfig.uploadImgHooks = {  
+            error: function (xhr, editor) {
+                alert("2：" + xhr + "请查看你的json格式是否正确，图片并没有上传");
+                // 图片上传出错时触发  如果是这块报错 就说明文件没有上传上去，直接看自己的json信息。是否正确
+                // xhr 是 XMLHttpRequst 对象，editor 是编辑器对象
+            },
+            fail: function (xhr, editor, result) {
+				//alert(result);
+                //  如果在这出现的错误 就说明图片上传成功了 但是没有回显在编辑器中，我在这做的是在原有的json 中添加了
+                //  一个url的key（参数）这个参数在 customInsert也用到
+                //  
+                alert("1：" + xhr + "请查看你的json格式是否正确，图片上传了，但是并没有回显");
+            },
+            success:function(xhr, editor, result){
+                //成功 不需要alert 当然你可以使用console.log 查看自己的成功json情况 
+                //
+				//alert(console.log(result))
+                // insertImg('https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png')
+            },
+            customInsert: function (insertImg, result, editor) {
+				//alert(result.url);
+                //console.log(result);
+                // 图片上传并返回结果，自定义插入图片的事件（而不是编辑器自动插入图片！！！）
+                // insertImg 是插入图片的函数，editor 是编辑器对象，result 是服务器端返回的结果
+                // 举例：假如上传图片成功后，服务器端返回的是 {url:'....'} 这种格式，即可这样插入图片：
+                insertImg(result.url);
+            }
+        };
+        editor.customConfig.showLinkImg = true; //是否开启网络图片，默认开启的。
+        
+        var editor_content = $('#editor_content');
+		 editor.customConfig.onchange = function (html) {
+            // 监控变化，同步更新到 textarea
+            editor_content.val(html);
+         };
+        
+        editor.create()
+    </script>
+        
+        </div>
+      </div>     
+    
+
+  <div class="form-group">
+        <div class="label">
+          <label>商品图片：</label>
+        </div>
+        <div class="field ">      
+         <input type="text" class="input w50" value="" name="product_img" placeholder="输入网络图片地址"  />
+         <dd  class="mselector">
+        <input type="file" id="file" name="upfile" accept="image/gif,image/pdf,image/jpeg,image/jpg,image/png"  multiple>
+         <button class="btn btn-lg btn-info btnimg" type="button" style="margin-top:-10px; margin-left:10px;" >上传图片</button>
+         <span id="em"></span>
+          </dd>  
+        </div>
+         <span style="margin-left:100px;  color:red">（请选择一种上传方式）</span>
+     
+      </div> 
+     
+      
+      
+      
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button id="btn1" class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>      
+         
+  
+
+
+<script type="text/javascript">
+
+function ss()
+{
+	//下拉列表
+	var slt=document.getElementById("class_id");
+	if(slt.value=="0")
+	{
+		//alert("请选择商品分类");
+		$("#span").html("请选择商品分类");
+		return false;
+	}else
+	{
+		$("#span").html("");
+	}
+	 
+		
+}
+
+
+
+$("input[type='file']").change(function(e) {
+	
+	var imagename=document.getElementById('file').files[0].name
+	$("#em").html(imagename);
+});
+
+
+</script>
+
+
+<script type="text/javascript">
+	
+		$('.form-control-chosen').chosen({
+		  allow_single_deselect: true,
+		  width: '100%'
+		});
+		$('.form-control-chosen-required').chosen({
+		  allow_single_deselect: false,
+		  width: '100%'
+		});
+		$('.form-control-chosen-search-threshold-100').chosen({
+		  allow_single_deselect: true,
+		  disable_search_threshold: 100,
+		  width: '100%'
+		});
+		$('.form-control-chosen-optgroup').chosen({
+		  width: '100%'
+		});
+
+		$(function() {
+		  $('[title="clickable_optgroup"]').addClass('chosen-container-optgroup-clickable');
+		});
+		$(document).on('click', '[title="clickable_optgroup"] .group-result', function() {
+		  var unselected = $(this).nextUntil('.group-result').not('.result-selected');
+		  if(unselected.length) {
+		    unselected.trigger('mouseup');
+		  } else {
+		    $(this).nextUntil('.group-result').each(function() {
+		      $('a.search-choice-close[data-option-array-index="' + $(this).data('option-array-index') + '"]').trigger('click');
+		    });
+		  }
+		});
+	</script>
+</body></html>

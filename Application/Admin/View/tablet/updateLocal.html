@@ -1,0 +1,109 @@
+<include file="public/header" />
+
+<script type="text/javascript" src="__PUBLIC__/EasyUI/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/EasyUI/js/chosen.jquery.js"></script>
+
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>编辑区域</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" onsubmit=" return ss()" action="{:U('Tablet/updateLocal')}">  
+ <volist name="list" id='va'>
+    <input type="hidden" name="uid" value="{$va.id}" />
+      <div class="form-group">
+        <div class="label">
+          <label>区域名称：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="{$va.local_name}"  name="local_name" data-validate="required:请输区域名称" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>备注：</label>
+        </div>
+        <div class="field">
+         <input type="text" class="input w50" value="{$va.local_info}" name="local_info"  />
+        </div>
+      </div>     
+      
+
+     <div class="form-group">
+        <div class="label">
+          <label>选择分类：</label>
+        </div>
+        <div class="field">
+        			 <select  id="multiple" name="question[]" onchange="ss()" class="input w50 form-control form-control-chosen"  data-placeholder="请选择"   multiple>
+						<option></option>
+                        	<volist name="classify_localid" id="vo">
+                             	<option value="{$vo.id}" <if condition="in_array($vo['id'],$va['classid'])" >selected="selected"</if> >{$vo.classify_name}  </option>
+                           </volist>
+                        </select>
+                        
+                   <span id="span" style="color:#ee3333; margin-left:30px;  line-height: 2.5rem;"></span>
+                        
+        </div>
+      </div>   
+      
+      </volist>
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+function ss(){
+	var slt = $("select[name='question[]']").val();
+	if(slt==null){
+		$("#span").html("请选择分类");
+		return false;
+	}
+	else
+	{
+		$("#span").html("");
+		
+	}
+	return true;
+	}
+
+</script>
+
+	<script type="text/javascript">
+		$('.form-control-chosen').chosen({
+		  allow_single_deselect: true,
+		  width: '100%'
+		});
+		$('.form-control-chosen-required').chosen({
+		  allow_single_deselect: false,
+		  width: '100%'
+		});
+		$('.form-control-chosen-search-threshold-100').chosen({
+		  allow_single_deselect: true,
+		  disable_search_threshold: 100,
+		  width: '100%'
+		});
+		$('.form-control-chosen-optgroup').chosen({
+		  width: '100%'
+		});
+
+		$(function() {
+		  $('[title="clickable_optgroup"]').addClass('chosen-container-optgroup-clickable');
+		});
+		$(document).on('click', '[title="clickable_optgroup"] .group-result', function() {
+		  var unselected = $(this).nextUntil('.group-result').not('.result-selected');
+		  if(unselected.length) {
+		    unselected.trigger('mouseup');
+		  } else {
+		    $(this).nextUntil('.group-result').each(function() {
+		      $('a.search-choice-close[data-option-array-index="' + $(this).data('option-array-index') + '"]').trigger('click');
+		    });
+		  }
+		});
+	</script>
+</body></html>

@@ -1,0 +1,678 @@
+[ 2020-04-07T16:36:39+08:00 ] ::1 /bysystem/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006455s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009418s ]
+
+[ 2020-04-07T16:37:10+08:00 ] ::1 /bysystem/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002280s ]
+
+[ 2020-04-07T16:37:15+08:00 ] ::1 /bysystem/index.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0605s ]
+SQL: SELECT * FROM `yzx_master` WHERE `master_username` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045285s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001555s ]
+
+[ 2020-04-07T16:37:25+08:00 ] ::1 /bysystem/index.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002043s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `yzx_master` WHERE `master_username` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001167s ]
+
+[ 2020-04-07T16:37:32+08:00 ] ::1 /bysystem/index.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `yzx_master` WHERE `master_username` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-04-07T16:37:32+08:00 ] ::1 /bysystem/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000793s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001349s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0315s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.1000s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0355s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0816s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0122s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.082175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001165s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001207s ]
+
+[ 2020-04-07T16:37:32+08:00 ] ::1 /bysystem/index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002844s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002780s ]
+
+[ 2020-04-07T16:37:33+08:00 ] ::1 /bysystem/index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002455s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0667s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0944s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2020-04-07T16:37:38+08:00 ] ::1 /bysystem/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+
+[ 2020-04-07T16:37:38+08:00 ] ::1 /bysystem/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000757s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001601s ]
+
+[ 2020-04-07T16:37:40+08:00 ] ::1 /bysystem/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001355s ]
+
+[ 2020-04-07T16:37:43+08:00 ] ::1 /bysystem/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001782s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001218s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001273s ]
+
+[ 2020-04-07T16:37:51+08:00 ] ::1 /bysystem/index.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001457s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `yzx_master` WHERE `master_username` = 'admin' LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2020-04-07T16:37:52+08:00 ] ::1 /bysystem/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0132s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0140s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2020-04-07T16:37:52+08:00 ] ::1 /bysystem/index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004096s ]
+
+[ 2020-04-07T16:37:52+08:00 ] ::1 /bysystem/index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2020-04-07T16:37:55+08:00 ] ::1 /bysystem/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+
+[ 2020-04-07T16:37:55+08:00 ] ::1 /bysystem/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2020-04-07T16:38:01+08:00 ] ::1 /bysystem/index.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `yzx_master` WHERE `master_username` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-04-07T16:38:01+08:00 ] ::1 /bysystem/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0091s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0121s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2020-04-07T16:38:01+08:00 ] ::1 /bysystem/index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015453s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001558s ]
+
+[ 2020-04-07T16:38:01+08:00 ] ::1 /bysystem/index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2020-04-07T16:38:02+08:00 ] ::1 /bysystem/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0095s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0104s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2020-04-07T16:38:02+08:00 ] ::1 /bysystem/index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001307s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2020-04-07T16:38:02+08:00 ] ::1 /bysystem/index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2020-04-07T16:38:03+08:00 ] ::1 /bysystem/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0107s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0137s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2020-04-07T16:38:03+08:00 ] ::1 /bysystem/index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001660s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2020-04-07T16:38:03+08:00 ] ::1 /bysystem/index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2020-04-07T16:38:04+08:00 ] ::1 /bysystem/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0106s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0166s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2020-04-07T16:38:04+08:00 ] ::1 /bysystem/index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001129s ]
+
+[ 2020-04-07T16:38:04+08:00 ] ::1 /bysystem/index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id D:\phpStudy\PHPTutorial\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+NOTIC: [2] Cannot modify header information - headers already sent D:\phpStudy\PHPTutorial\WWW\bysystem\ThinkPHP\Library\Think\Controller.class.php 第 215 行.
+
+[ 2020-04-07T16:38:05+08:00 ] ::1 /bysystem/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+
+[ 2020-04-07T16:38:05+08:00 ] ::1 /bysystem/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2020-04-07T17:44:32+08:00 ] ::1 /bysystem/index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001674s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002194s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001616s ]
+

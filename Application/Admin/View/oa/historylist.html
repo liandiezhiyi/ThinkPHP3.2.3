@@ -1,0 +1,239 @@
+<include file="public/header" />
+
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 商品设置</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+    <div class="padding border-bottom">
+      <ul class="search" style="padding-left:10px;">
+        <li> <a class="button border-main icon-plus-square-o" href="{:U('Oa/addhistory')}"> 新增历史发展</a> </li>
+        <li>搜索：</li>  
+        <form action="{:U('Oa/historySearch')}" method="POST">
+	        <li>
+	          <input type="text" placeholder="请输入发展标题" name="keywords" value="{$key}" class="input" style="width:250px; line-height:17px;display:inline-block" />
+	          <button  class="button border-main icon-search"  > 搜索</button>
+	        </li>
+     </form>  
+      </ul>
+    </div>
+    <form action="{:U('Oa/delhistorys')}" method="POST" id="listform">
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="100" style="text-align:left; padding-left:20px;">ID</th>
+        <th>图片</th>
+        <th>历史发展标题</th>
+        <th>摘要</th>
+        <th>历史详情</th>
+        <th width="310">操作</th>
+      </tr>
+    <volist name="list" id="vo">
+        <tr>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="{$vo.id}" />
+           {$vo.id}</td>
+          <td>
+          <img width="40px" height="40px" src="{$vo.history_url}"/>
+          
+          </td>
+          <td width="10%">{$vo.history_title}</td>
+           <td width="10%">{$vo.history_des}</td>
+          <td ><!-- {$vo.product_info|mb_substr=0,20,'utf-8'} -->  <a href="{:U('Oa/more',array('id'=>$vo['id']))}" target="view_window"><span id="more">详情查看</span></a></td>
+
+          
+          <td><div class="button-group"> <a class="button border-main" href="{:U('Oa/updatehistory',array('id'=>$vo['id']))}"><span class="icon-edit"></span> 修改</a> <a class="button border-red" href="{:U('Oa/delhistory',array('id'=>$vo['id']))}" " onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+      </volist>
+      <tr>
+        <td style="text-align:left; padding:19px 0;padding-left:20px;"><input type="checkbox" id="checkall"/>
+          全选 </td>
+        <td colspan="7" style="text-align:left;padding-left:20px;"> <a href="javascript:void(0)"  class="button border-red icon-trash-o" style="padding:5px 15px;" onclick="DelSelect()"> 批量删除</a>
+     </td>
+      </tr>
+      <tr>
+        <td colspan="8"><div class="pagelist">{$page}  </div></td>
+      </tr>
+    </table>
+    </form>
+  </div>
+<div id="allconten">
+
+</div>
+<script type="text/javascript">
+
+
+function more(){
+	
+	alert();
+}
+
+//搜索
+function changesearch(){	
+		
+}
+
+//单个删除
+function del(){
+	var msg="您确定要删除吗?";
+	if(confirm(msg)==true){
+		return true;
+	}else{return false;}
+}
+
+//全选
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+//批量删除
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) return false;		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
+
+//批量排序
+function sorts(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){	
+		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择要操作的内容!");
+		return false;
+	}
+}
+
+
+//批量首页显示
+function changeishome(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");		
+	
+		return false;
+	}
+}
+
+//批量推荐
+function changeisvouch(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");	
+		
+		return false;
+	}
+}
+
+//批量置顶
+function changeistop(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){		
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");		
+	
+		return false;
+	}
+}
+
+
+//批量移动
+function changecate(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){		
+		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择要操作的内容!");
+		
+		return false;
+	}
+}
+
+//批量复制
+function changecopy(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){	
+		var i = 0;
+	    $("input[name='id[]']").each(function(){
+	  		if (this.checked==true) {
+				i++;
+			}		
+	    });
+		if(i>1){ 
+	    	alert("只能选择一条信息!");
+			$(o).find("option:first").prop("selected","selected");
+		}else{
+		
+			$("#listform").submit();		
+		}	
+	}
+	else{
+		alert("请选择要复制的内容!");
+		$(o).find("option:first").prop("selected","selected");
+		return false;
+	}
+}
+
+</script>
+</body>
+</html>

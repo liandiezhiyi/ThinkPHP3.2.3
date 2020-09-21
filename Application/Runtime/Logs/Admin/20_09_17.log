@@ -1,0 +1,1162 @@
+[ 2020-09-17T10:47:42+08:00 ] 127.0.0.1 /index.php/Login/Logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.022277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012977s ]
+
+[ 2020-09-17T10:47:43+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.010504s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.010574s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2020-09-17T10:47:50+08:00 ] 127.0.0.1 /index.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0353s ]
+SQL: SELECT * FROM `yzx_master` WHERE `master_username` = 'admin' LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2020-09-17T10:47:51+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0308s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.0378s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0131s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0988s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0134s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2020-09-17T10:47:51+08:00 ] 127.0.0.1 /index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2020-09-17T10:47:51+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0294s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0275s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T13:38:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014262s ]
+
+[ 2020-09-17T13:38:52+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.006045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.006117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001415s ]
+
+[ 2020-09-17T13:38:58+08:00 ] 127.0.0.1 /index.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0547s ]
+SQL: SELECT * FROM `yzx_master` WHERE `master_username` = 'admin' LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2020-09-17T13:38:58+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0516s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0121s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0845s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000957s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2020-09-17T13:38:58+08:00 ] 127.0.0.1 /index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
+
+[ 2020-09-17T13:38:59+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007401s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T13:39:11+08:00 ] 127.0.0.1 /index.php/Basic/Costlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0013s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yzx_cost` [ RunTime:0.0191s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_cost` LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT * FROM `yzx_cost` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\4cdc0cb2180ba442433c6c4af855c415.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001437s ]
+
+[ 2020-09-17T13:39:11+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T13:39:18+08:00 ] 127.0.0.1 /index.php/Basic/Dresonlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0013s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_dreson` [ RunTime:0.0398s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_dreson` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_dreson` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\7219393f46df485caba298559b0aeac3.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2020-09-17T13:39:18+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T13:39:21+08:00 ] 127.0.0.1 /index.php/Basic/RelationshipList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0011s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `yzx_relationship` [ RunTime:0.0314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_relationship` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_relationship` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\173eea25d83b3fdb9af9f2bf5b5f199e.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000689s ]
+
+[ 2020-09-17T13:39:21+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T14:00:04+08:00 ] 127.0.0.1 /index.php/Rule/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0012s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_master` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_master` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=30 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzx_group` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=29 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=27 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=23 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\5acbf439466079406c374b14ae0d990c.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2020-09-17T14:00:04+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T14:01:03+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0017s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2020-09-17T14:01:04+08:00 ] 127.0.0.1 /index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013838s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2020-09-17T14:01:04+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T14:01:09+08:00 ] 127.0.0.1 /index.php/Rule/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_master` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_master` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=30 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzx_group` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=27 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=23 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\5acbf439466079406c374b14ae0d990c.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2020-09-17T14:01:09+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001077s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T14:16:25+08:00 ] 127.0.0.1 /index.php/Rule/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0008s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0006s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_master` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_master` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=30 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_group` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=29 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=27 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=23 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\5acbf439466079406c374b14ae0d990c.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000625s ]
+
+[ 2020-09-17T14:16:25+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T14:16:32+08:00 ] 127.0.0.1 /index.php/Rule/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_master` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_master` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=30 )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_group` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=27 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=23 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=3 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\5acbf439466079406c374b14ae0d990c.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2020-09-17T14:16:32+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T14:16:48+08:00 ] 127.0.0.1 /index.php/Rule/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0010s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_master` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_master` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=30 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_group` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=27 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=23 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\5acbf439466079406c374b14ae0d990c.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009134s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000577s ]
+
+[ 2020-09-17T14:16:48+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T14:16:49+08:00 ] 127.0.0.1 /index.php/Rule/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_master` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_master` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=30 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzx_group` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=27 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=23 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\5acbf439466079406c374b14ae0d990c.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2020-09-17T14:16:49+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T14:16:51+08:00 ] 127.0.0.1 /index.php/Rule/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0011s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_master` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_master` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=30 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzx_group` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=27 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=23 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=7 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=3 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\5acbf439466079406c374b14ae0d990c.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2020-09-17T14:16:52+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T14:16:52+08:00 ] 127.0.0.1 /index.php/Rule/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0010s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_master` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_master` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=30 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yzx_group` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=27 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=23 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\5acbf439466079406c374b14ae0d990c.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2020-09-17T14:16:52+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T16:16:37+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+
+[ 2020-09-17T16:16:37+08:00 ] 127.0.0.1 /index.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000634s ]
+
+[ 2020-09-17T16:16:42+08:00 ] 127.0.0.1 /index.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `yzx_master` WHERE `master_username` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2020-09-17T16:16:42+08:00 ] 127.0.0.1 /index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001576s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yzx_rule` ORDER BY id is null,id  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0011s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0008s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000606s ]
+
+[ 2020-09-17T16:16:43+08:00 ] 127.0.0.1 /index.php/index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018837s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001347s ]
+
+[ 2020-09-17T16:16:43+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+
+[ 2020-09-17T16:16:44+08:00 ] 127.0.0.1 /index.php/Rule/userlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0006s ]
+SQL: SELECT `uid`,`group_id`,`title`,`rules` FROM yzx_access a INNER JOIN yzx_group g on a.group_id=g.id  WHERE ( a.uid='7' and g.status='1' )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `yzx_rule` [ RunTime:0.0009s ]
+SQL: SELECT `condition`,`name` FROM `yzx_rule` WHERE `id` IN ('1','14','22','23','24','25','26','15','27','28','29','30','31','32','16','33','34','35','2','18','36','37','38','40','60','19','41','42','43','44','46','20','47','48','49','50','51','21','52','53','54','55','56','3','70','4','115','117','118','119','120','121','116','122','123','124','125','126','127','128','137','138','140','129','130','131','132','133','134','135','136','61','62','65','66','67','68','69','63','71','72','73','74','75','64','76','77','78','79','80','81','82','83','84','86','87','88','89','90','85','91','92','93','94','95','96','97','100','101','102','103','104','98','110','111','112','113','114','99','105','106','107','108','109') AND `type` = 1 AND `status` = 1  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `yzx_master` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yzx_master` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_master` ORDER BY id desc LIMIT 0,20   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_access` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=30 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `yzx_group` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=29 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=13 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=27 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=23 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=11 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=7 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=3 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_access` WHERE ( uid=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_group` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: key E:\phpstudy\WWW\bysystem\Application\Runtime\Cache\Admin\5acbf439466079406c374b14ae0d990c.php 第 153 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2020-09-17T16:16:45+08:00 ] 127.0.0.1 /index.php/Oa/checkNotify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `yzx_oasystem` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yzx_oasystem` WHERE `oasystem_noticestate` = 0 ORDER BY id desc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `yzx_notice` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 56 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 55 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 54 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 52 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 49 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 28 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 11 AND `master_checkuser` = 7  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 5 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 3 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yzx_notice` WHERE `oasystem_id` = 2 AND `master_checkuser` = 7  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [2] implode(): Invalid arguments passed E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 895 行.
+NOTIC: [8] Undefined variable: id E:\phpstudy\WWW\bysystem\Application\Admin\Controller\OaController.class.php 第 897 行.
+

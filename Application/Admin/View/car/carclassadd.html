@@ -1,0 +1,46 @@
+<include file="public/header" />
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>新增汽车部门</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" action="{:U('Tablet/addClassify')}">
+ 
+      <div class="form-group">
+        <div class="label">
+          <label>汽车部门：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value=""  name="classify_name" data-validate="required:请输入汽车部门名称" />
+          <div class="tips"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="label">
+          <label>备注：</label>
+        </div>
+        <div class="field">
+         <input type="text" class="input w50" value="" name="classify_info"  />
+        </div>
+      </div>     
+      
+
+    <!--   <div class="form-group">
+        <div class="label">
+          <label>确认密码：</label>
+        </div>
+        <div class="field">
+         <input type="password" class="input w50" value="" name="title" data-validate="required:确认密码" />
+        </div>
+      </div>     -->
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+</body></html>

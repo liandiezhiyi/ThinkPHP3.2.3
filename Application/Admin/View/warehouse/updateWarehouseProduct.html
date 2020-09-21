@@ -1,0 +1,146 @@
+<include file="public/header" />
+
+<script type="text/javascript" src="__PUBLIC__/EasyUI/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/EasyUI/js/chosen.jquery.js"></script>
+
+<div class="panel admin-panel">
+  <div class="panel-head" id="add"><strong><span class="icon-pencil-square-o"></span>新增仓库物品</strong></div>
+  <div class="body-content">
+    <form method="post" class="form-x" onsubmit=" return ss()" action="{:U('Warehouse/updateWarehouseProduct')}">  
+ 	<volist name="list" id="va">
+ 	<input type="hidden" name="uid" value="{$va.id}"/>
+      <div class="form-group">
+        <div class="label">
+          <label>物品名称：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input w50" value="{$va.warehouseproduct_name}"  name="warehouseproduct_name" data-validate="required:请输物品名称" />        
+        </div>
+      </div>
+      
+      
+      	<div class="form-group">
+	        <div class="label">
+	          <label>所属区域：</label>
+	        </div>
+	        <div class="field">
+	        			 <select name="class" onblur="ss()" id="class"  class="input w50 "  >
+							<option value="0" selected="selected">请选择</option>
+	                        	<volist name="class" id="vo">
+	                             	<option value="{$vo.id}" <if condition="$vo['id'] eq $va['warehouseproduct_class']" >selected="selected"</if>>{$vo.warehouseclass_name}   </option>
+	                           </volist>
+	                        </select> 
+	                        <span id="span1" style="color:#ee3333; margin-left:30px;  line-height: 2.5rem;"></span>
+	        </div>
+       </div> 
+      
+      
+      	<div class="form-group">
+	        <div class="label">
+	          <label>供应商：</label>
+	        </div>
+	        <div class="field">
+	        			 <select name="supplier"  onblur="ss()" id="supplier"  class="input w50 "  >
+							<option value="0" selected="selected">请选择</option>
+	                        	<volist name="supplier" id="vs">
+	                             	<option value="{$vs.id}" <if condition="$vs['id'] eq $va['warehouseproduct_supplier']" >selected="selected"</if> >{$vs.supplier_name}   </option>
+	                           </volist>
+	                        </select> 
+	                        <span id="span2" style="color:#ee3333; margin-left:30px;  line-height: 2.5rem;"></span>
+	        </div>
+       </div> 
+      
+      
+ 
+      
+      <div class="form-group">
+        <div class="label">
+          <label>数量：</label>
+        </div>
+        <div class="field">
+         <input type="text" onkeyup="this.value=this.value.replace(/\D/g,'')" class="input w50" value="{$va.warehouseproduct_num}" name="warehouseproduct_num"  data-validate="required:请输物品数量" />
+        </div>
+      </div>     
+      
+        </volist>
+      
+      <div class="form-group">
+        <div class="label">
+          <label></label>
+        </div>
+        <div class="field">
+          <button class="button bg-main icon-check-square-o" type="submit"> 提交</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript">
+function ss()
+{
+	var slt = $("select[name='class']").val();
+	if(slt==0)
+	{
+		$("#span1").html("请选择区域");
+		return false;
+		
+	}
+	else{
+		$("#span1").html("");
+		
+	}
+	
+	
+	var supplier = $("select[name='supplier']").val();
+	if(supplier==0)
+	{
+		$("#span2").html("请选择供应商");
+		return false;
+	}
+	else
+	{
+		$("#span2").html("");
+	}
+
+	return true;
+	
+}
+	
+
+
+</script>
+
+	<script type="text/javascript">
+		$('.form-control-chosen').chosen({
+		  allow_single_deselect: true,
+		  width: '100%'
+		});
+		$('.form-control-chosen-required').chosen({
+		  allow_single_deselect: false,
+		  width: '100%'
+		});
+		$('.form-control-chosen-search-threshold-100').chosen({
+		  allow_single_deselect: true,
+		  disable_search_threshold: 100,
+		  width: '100%'
+		});
+		$('.form-control-chosen-optgroup').chosen({
+		  width: '100%'
+		});
+
+		$(function() {
+		  $('[title="clickable_optgroup"]').addClass('chosen-container-optgroup-clickable');
+		});
+		$(document).on('click', '[title="clickable_optgroup"] .group-result', function() {
+		  var unselected = $(this).nextUntil('.group-result').not('.result-selected');
+		  if(unselected.length) {
+		    unselected.trigger('mouseup');
+		  } else {
+		    $(this).nextUntil('.group-result').each(function() {
+		      $('a.search-choice-close[data-option-array-index="' + $(this).data('option-array-index') + '"]').trigger('click');
+		    });
+		  }
+		});
+	</script>
+</body></html>

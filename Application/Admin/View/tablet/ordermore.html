@@ -1,0 +1,77 @@
+<include file="public/header" />
+
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 订单详情</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+   
+   		<table  id='table1' class="table table-hover text-center" >
+      <tr>
+        <!--  <th width="100" style="text-align:left; padding-left:20px;">ID</th>-->
+        <th >订单号</th>
+         <th >商品图片</th>  
+        <th >商品名称</th>  
+        <th>数量</th>     
+        <th>单价</th>  
+        <th >付款人</th>       
+        
+      </tr>
+    <volist name="list" id="vo">
+    
+        <tr>
+         <!--   <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="{$vo.id}" />
+           {$vo.id}</td>-->
+          <td width="15%" align="center" valign="middle" >{$vo.ordetail_ornum}</td>
+          <td width="10%"><img src="{$vo.product_img}" style="width:50px;height:50px" ></td>     
+           <td width="25%">{$vo.ordetail_id}</td>       
+           <td  width="10%">{$vo.ordetail_num}</td>    
+            <td width="10%">{$vo.ordetail_price}</td>   
+            <td >
+            <if condition="substr($vo['area'],0,4) eq '/byg' or substr($vo['area'],0,4) eq 'http'">
+            <img src="{$vo.area}" width="60%">
+            <else/>
+            {$vo.area}
+            </if>
+           </td>   
+          
+       </tr>
+      </volist>
+      <!--  <tr>
+      <td style="text-align:left; padding:19px 0;padding-left:20px;"><input type="checkbox" id="checkall"/>
+          全选 </td>
+        <td colspan="7" style="text-align:left;padding-left:20px;"> <a href="javascript:void(0)"  class="button border-red icon-trash-o" style="padding:5px 15px;" onclick="DelSelect()"> 批量删除</a>
+     </td>
+      </tr> --> 
+      <tr>
+        <td colspan="8"><div class="pagelist">{$page}  </div></td>
+      </tr>
+    </table>
+
+
+</body>
+<script type="text/javascript">
+   jQuery.fn.rowspan = function(colIdx) { //封装的一个JQuery小插件
+      return this.each(function(){
+         var that;
+         $('tr', this).each(function(row) {
+            $('td:eq('+colIdx+')', this).filter(':visible').each(function(col) {
+               if (that!=null && $(this).html() == $(that).html()) {
+                  rowspan = $(that).attr("rowSpan");
+                  if (rowspan == undefined) {
+                     $(that).attr("rowSpan",1);
+                     rowspan = $(that).attr("rowSpan"); }
+                  rowspan = Number(rowspan)+1;
+                  $(that).attr("rowSpan",rowspan);
+                  $(this).hide();
+               } else {
+                  that = this;
+               }
+            });
+         });
+      });
+   }
+   $(function() {
+      $("#table1").rowspan(0);//传入的参数是对应的列数从0开始  第一列合并相同
+      $("#table1").rowspan(5);//传入的参数是对应的列数从0开始  第一列合并相同
+      
+});</script> 
+
+</html>

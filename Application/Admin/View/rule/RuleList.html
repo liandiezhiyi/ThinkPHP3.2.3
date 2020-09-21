@@ -1,0 +1,352 @@
+<include file="public/header" />
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 权限管理</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+    <div class="padding border-bottom">
+      <ul class="search" style="padding-left:10px;">
+        <li> <a class="button border-main icon-plus-square-o " href="{:U('Rule/AddRule')}"   data-reveal-id="myModal"> 新增权限</a> </li>
+       <!-- <li>搜索：</li>  
+        <form action="{:U('Rule/RuleSearch')}" method="GET">
+	        <li>
+	          <input type="text" placeholder="证明单位" name="keywords" value="{$key}" class="input" style="width:250px; line-height:17px;display:inline-block" />
+	          <button  class="button border-main icon-search"  > 搜索</button>
+	        </li>
+     </form>   --> 
+      </ul>
+    </div>
+    <form action="{:U('Basic/delCompanies')}" method="POST" id="listform">
+
+    <table class="table table-hover text-center1">
+      <tr>
+        <!-- <th width="100" style="text-align:left; padding-left:20px;">ID</th> -->
+        <th >权限名称</th>
+        <th >权限</th>  
+        <th width="310">操作</th>
+      </tr>
+    <volist name="data" id="vo">
+    <if condition="$vo['pid'] gt 0"><tr style="display:none"> <else/><tr> </if>
+        
+          <!-- <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="{$vo.id}" />
+           {$vo.id}</td> -->
+          <td width="35%" >
+		<if condition="$vo.pid eq 0"><a class="zd" href="javascript:void(0)" style="cursor:pointer" level="{$vo.pid}">[+]</a></if>
+         <a  class="zd" href="javascript:void(0)" style="cursor:pointer" level="{$vo.pid}"></a>
+          {$vo._name}
+          </td>
+          <td width="35%" >{$vo.name}</td>     
+          
+          <td><div class="button-group"><a class="moduser1 button border-main icon-plus-square-o " pid="{$vo['id']}"  href="{:U('Rule/AddRule')}"   data-reveal-id="myModal"> 新增子权限</a>
+          <a  data-reveal-id="myModal1" class="moduser button border-main" href="{:U('Rule/updateRule',array('id'=>$vo['id']))}"> <span class="icon-edit"></span> 修改</a> 
+          <a class="button border-red" href="{:U('Rule/delRule',array('id'=>$vo['id']))}" onclick="return del(1,1,1)"><span class="icon-trash-o"></span> 删除</a> </div></td>
+        </tr>
+      </volist>
+    <!--   <tr>
+        <td style="text-align:left; padding:19px 0;padding-left:20px;"><input type="checkbox" id="checkall"/>
+          全选 </td>
+        <td colspan="7" style="text-align:left;padding-left:20px;"> <a href="javascript:void(0)"  class="button border-red icon-trash-o" style="padding:5px 15px;" onclick="DelSelect()"> 批量删除</a>
+     </td>
+      </tr>-->
+      <tr> 
+        <td colspan="8"><div class="pagelist">{$page}  </div></td>
+      </tr>
+    </table>
+    </form>
+    	
+  </div>
+
+
+<script type="text/javascript">
+
+//弹框添加子权限部分
+$('.moduser1').click(function(){
+	  var id=$(this).attr('pid');
+    	$(".pid").attr("value",id)
+    	
+   // });
+//return false;
+});
+
+
+//弹框修改权限部份
+$('.moduser').click(function(){
+	//var id=$(this).attr('href');
+	//alert(id);return false;
+    $.get($(this).attr('href'),function(data){
+    	
+    	//alert(data[0]['title']);
+    	$("#title").attr("value",data[0]['title'])
+    	$("#name").attr("value",data[0]['name'])
+    	$(".id").attr("value",data[0]['id'])
+    	
+    	
+    });
+//return false;
+});
+
+//搜索
+function changesearch(){	
+		
+}
+
+//单个删除
+function del(){
+	var msg="您确定要删除吗?";
+	if(confirm(msg)==true){
+		return true;
+	}else{return false;}
+}
+
+//全选
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+//批量删除
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要删除选中的内容吗？");
+		if (t==false) return false;		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择您要删除的内容!");
+		return false;
+	}
+}
+
+//批量排序
+function sorts(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){	
+		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择要操作的内容!");
+		return false;
+	}
+}
+
+
+//批量首页显示
+function changeishome(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");		
+	
+		return false;
+	}
+}
+
+//批量推荐
+function changeisvouch(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");	
+		
+		return false;
+	}
+}
+
+//批量置顶
+function changeistop(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){		
+		
+		$("#listform").submit();	
+	}
+	else{
+		alert("请选择要操作的内容!");		
+	
+		return false;
+	}
+}
+
+
+//批量移动
+function changecate(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){		
+		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择要操作的内容!");
+		
+		return false;
+	}
+}
+
+//批量复制
+function changecopy(o){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){	
+		var i = 0;
+	    $("input[name='id[]']").each(function(){
+	  		if (this.checked==true) {
+				i++;
+			}		
+	    });
+		if(i>1){ 
+	    	alert("只能选择一条信息!");
+			$(o).find("option:first").prop("selected","selected");
+		}else{
+		
+			$("#listform").submit();		
+		}	
+	}
+	else{
+		alert("请选择要复制的内容!");
+		$(o).find("option:first").prop("selected","selected");
+		return false;
+	}
+}
+
+
+
+//获取当前的 a 标签
+$('a.zd').click(function(){
+
+    //找到当前所在的tr
+    var tr = $(this).parent().parent();
+    
+    //获取当前的级别level
+    var cur_level = $(this).attr('level');
+   //alert(cur_level);
+    //获取当前a标签的内容
+    var opt = $(this).html();
+    //判断当前是否为[-]
+    if(opt == '[-]')
+    {
+        //是，则在当前tr中，取出子分类并隐藏.nextAll()和preAll()获取的是兄弟节点
+        tr.nextAll('tr').each(function(){
+        	//再判断a标签内 level是否大于 当前cur_level值
+        	if($(this).find('a.zd').attr('level') > cur_level)
+        	{
+        		$(this).hide();
+        		//大于，则隐藏
+        	}
+        	else
+        	{
+        		return false;
+        	}
+        });
+
+        $(this).html('[+]');
+    }
+
+    else
+    {
+    	//若当前是[+] ,则其子分类应展示
+    	tr.nextAll('tr').each(function(){
+    		if($(this).find('a.zd').attr('level') > cur_level)
+    		{
+    			$(this).show();
+    			if($(this).find('a.zd').html()== '[+]')
+    			{
+    				return false;
+    			}
+    		}
+    		else
+			{
+    			
+				return false;
+			}
+    	});
+    	$(this).html('[-]');
+    }
+})
+
+
+</script>
+
+<!-- 新增 -->
+<div id="myModal" class="reveal-modal">
+
+
+	<form method="post"  class="form-x" action="{:U('Rule/AddRule')}">
+	<input type="hidden" name="pid" class='pid' value="0">
+      <label>名称：</label> <input type="text"  style="width:50%; font-size: 14px;padding: 10px;border: solid 1px #ddd;line-height: 20px;
+    /* display: block; */border-radius: 3px;-webkit-appearance: none;"  value=""  name="title" data-validate="required:请输入权限" />
+    <br><br><label>权限：</label> <input type="text"  style="width:50%; font-size: 14px;padding: 10px;border: solid 1px #ddd;line-height: 20px;
+    /* display: block; */border-radius: 3px;-webkit-appearance: none;"  value=""  name="name" data-validate="required:请输入权限" /><label>输入模块/控制器/方法即可 例如 :Admin/Rule/index</label>
+            <br><br> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button  style=" padding: 10px 30px;    border-color: #0ae;    color: #fff;       line-height: 20px; background-color: #0ae;border: solid 1px #ddd;    border-radius: 4px;    font-size: 14px;"  type="submit"> 提交</button>
+           
+    </form> 
+    
+
+</div>
+<!-- 新增 -->
+
+<!-- 修改 -->
+<div id="myModal1" class="reveal-modal">
+
+
+	<form method="post"  class="form-x" action="{:U('Rule/updateRule')}">
+	
+<input type="hidden" name="id" class="id" value=""/>
+      <label>名称：</label> <input type="text" id="title"  class="name"  style="width:50%; font-size: 14px;padding: 10px;border: solid 1px #ddd;line-height: 20px;
+    /* display: block; */border-radius: 3px;-webkit-appearance: none;"  value=""  name="title" data-validate="required:请输入证明单位名称" />
+           <br><br><label>权限：</label> <input type="text" id="name"  style="width:50%; font-size: 14px;padding: 10px;border: solid 1px #ddd;line-height: 20px;
+    /* display: block; */border-radius: 3px;-webkit-appearance: none;"  value=""  name="name" data-validate="required:请输入权限" />
+    <label>输入模块/控制器/方法即可 例如 :Admin/Rule/index</label>
+            <br><br> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <button  style=" padding: 10px 30px;    border-color: #0ae;    color: #fff;       line-height: 20px; background-color: #0ae;border: solid 1px #ddd;    border-radius: 4px;    font-size: 14px;"  type="submit"> 提交</button>
+           
+    </form> 
+    
+
+</div>
+<!-- 修改 -->
+</body>
+</html>

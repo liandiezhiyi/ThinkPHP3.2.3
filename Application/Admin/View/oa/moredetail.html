@@ -1,0 +1,26 @@
+<include file="public/header" />
+
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder">详情</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+   
+   <span style="font-size:18px;  "><label style="font-weight:blod">文档名称：</label> {$oasystem_name}</span><br><br>
+   
+ 	<span ><label style="font-weight:blod ;  font-size:18px;">文档内容： </label> 
+ 	{$oasystem_content}
+ 	</span> 	
+
+ 	<span ><label style="font-weight:blod ;  font-size:18px;">文档附件： </label> 
+ 		
+ 	</span> 
+ 	 <if condition="$oasystem_url neq ''">
+ 	<a  href="{$oasystem_url}">
+ 	  <button style="padding: 10px 30px" class="button bg-main" type="button"> 下载文件</button>
+	</a>
+	</if>
+
+
+
+</div>
+
+</body>
+</html>
